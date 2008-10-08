@@ -1,0 +1,27 @@
+Commanding Your SSH Universe with Capistrano
+
+=== Intro
+
+It's Friday at 4:45PM. The taste of your favorite beer; the smell of your favorite meal; the feeling of your favorite chair; those feelings grow more and more vivid in your mind. It feels so REAL. 
+
+Instantly you're snapped back to reality as you hear your boss yelling your name as they sprint to your desk. "We're going to need Application X deployed to staging before you leave. The client is going to give it a test run and demo it to some friends over the weekend." "But I'm still need to finish the tests for the code I wrote today!" You weren't doing Test Driven Development today, but that's another talk... To make things worse, as you pull the latest changes from version control you see that those URL rewriting changes the client requested have been pushed as well! Panic sets in. Let's recap what you need to do before you leave:
+
+# Need to write tests for that code! Bad developer!
+# Need to get the latest code up on staging
+# Need to check the database schema version, and update as needed
+# Resolve any dependancies that were introduced in the last batch of code
+# Restart the application server
+# AND Restart the web server since those URL rewrite changes were added
+
+What's that going to leave you with?
+
+* Carpal Tunnel
+* Many mistakes picture
+* High blood pressure
+* Sky falling
+
+As I count backwards from 3 you will slowly rise to consciousness feeling calm and relaxed. 3; the terminal is fading away. Your SFTP client is releasing memory and your servers are cooling down. 2; Your moving forward to today, forgetting about last Friday. The world is calmer, your app has been deployed. User acceptance is up. You've begun to segway to a new project. 1. And your back.
+
+== What is Capistrano?
+
+Let's talk about Capistrano.
